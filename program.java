@@ -12,7 +12,7 @@ public class program {
         String url = "jdbc:mysql://localhost:3306/minimarketamin";
         
         int pilihann;
-        //try catch
+        //try catch exception
         try (Scanner terimaInput = new Scanner (System.in)) {
             boolean menu=true;
             
@@ -27,13 +27,14 @@ public class program {
                 //kasir
                 trs.kasir();
 
+                //loop perulangan
                 while (menu){
                     System.out.println("\n------------------");
                     System.out.println("    Minimarket Amin");
                     System.out.println("------------------");
                     System.out.println("1. Lihat Data");
                     System.out.println("2. Tambah barang");
-                    System.out.println("3. Ubah nama barang(update data)");
+                    System.out.println("3. (update data)");
                     System.out.println("4. Hapus Data");
                     System.out.println("5. Cari Data");
                     System.out.println("6. Beli barang");
@@ -42,6 +43,7 @@ public class program {
                     System.out.print("\nPilihan anda (1/2/3/4/5/6/7): ");
                     pilihann = terimaInput.nextInt();
 
+                    //percabangan
                     switch (pilihann) {
                         case 1:
                         System.out.print("\033[H\033[2J");

@@ -27,7 +27,7 @@ public class barang implements penjualan {
         idkasir = brg.nextLine();
         System.out.print("Masukkan nama kasir : ");
         namakasir = brg.nextLine();
-        namakasir = namakasir.toUpperCase();
+        namakasir = namakasir.toUpperCase(); //method string
         kasirrr = idkasir +"-".concat(namakasir);
     }
     
@@ -52,6 +52,7 @@ public class barang implements penjualan {
         this.ukur = brg.nextInt();
         ukurannya = ukurn[ukur];
         boolean henti=false;
+        //exception
         try {
             System.out.println("ukuran " + ukur + " adalah " + ukurannya + "\n");}
         catch (Exception e){
